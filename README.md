@@ -61,8 +61,23 @@ export FEATURE_NAV_TOOL=/custom/path/feature-tool.js
 
 ## CLI 配套
 
-配套 [feature-nav](https://github.com/skilldag/feature-nav) 使用：
+需要配合 [feature-nav](https://github.com/skilldag/feature-nav) CLI 使用：
 
 ```bash
-npm install -g feature-nav
+# 克隆 CLI 工具
+git clone https://github.com/skilldag/feature-nav.git ~/feature-nav
+
+# 安装依赖并链接
+cd ~/feature-nav
+npm install
+npm link
+
+# 验证安装
+fn --help
+```
+
+或使用环境变量指定路径：
+
+```bash
+export FEATURE_NAV_TOOL=~/feature-nav/feature-tool.js
 ```
