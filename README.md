@@ -23,7 +23,21 @@ cp -r . ~/.config/nvim/lua/feature-nav/
 然后在 `init.lua` 中：
 
 ```lua
-require("feature-nav").setup()
+require("feature-nav").setup({
+    tool_path = "/path/to/feature-tool.js",
+})
+```
+
+## 配置
+
+| 选项        | 说明         | 默认值                                                 |
+| ----------- | ------------ | ------------------------------------------------------ |
+| `tool_path` | CLI 工具路径 | `~/.agents/skills/feature-nav/scripts/feature-tool.js` |
+
+或通过环境变量配置：
+
+```bash
+export FEATURE_NAV_TOOL=/custom/path/feature-tool.js
 ```
 
 ## 使用

@@ -12,7 +12,9 @@ local function get_project_name()
 end
 
 local config = {
-	tool_path = os.getenv("HOME") .. "/.agents/skills/feature-nav/scripts/feature-tool.js",
+	tool_path = vim.g.feature_nav_tool_path
+		or os.getenv("FEATURE_NAV_TOOL")
+		or os.getenv("HOME") .. "/.agents/skills/feature-nav/scripts/feature-tool.js",
     left_width_ratio = 0.32,
     --- 右侧上半部分高度占整列高度的比例（余下为代码区）
     preview_top_ratio = 0.44,

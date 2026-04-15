@@ -14,6 +14,10 @@ local default_config = {
 function M.setup(user_config)
     local config = vim.tbl_deep_extend("force", default_config, user_config or {})
     
+    if config.tool_path then
+        vim.g.feature_nav_tool_path = config.tool_path
+    end
+    
     -- 设置用户命令
     vim.api.nvim_create_user_command("FeatureNav", function()
         require("feature-nav").open()
