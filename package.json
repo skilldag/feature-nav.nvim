@@ -1,0 +1,6 @@
+{
+  "name": "feature-nav.nvim",
+  "version": "1.0.0",
+  "description": "Neovim plugin for feature navigation",
+  "license": "MIT"
+}
