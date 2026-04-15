@@ -10,8 +10,8 @@
 -- 本地开发
 { dir = "~/source/feature-nav.nvim" }
 
--- 或从 GitHub (发布后)
-{ "your-github/feature-nav.nvim" }
+-- 或从 GitHub
+{ "skilldag/feature-nav.nvim" }
 ```
 
 ### 复制文件
@@ -47,7 +47,7 @@ require("feature-nav").setup()
 
 ## CLI 配套
 
-配合 [feature-nav](https://github.com/your-github/feature-nav) 使用：
+配套 [feature-nav](https://github.com/skilldag/feature-nav) 使用：
 
 ```bash
 npm install -g feature-nav
